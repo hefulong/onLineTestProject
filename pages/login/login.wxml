@@ -1,0 +1,33 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+  <view class='background-div'>
+    <image class='background-img' src='../../image/background.jpg'></image>
+  </view>
+  
+  <view class='input-div'>
+    <view class='input-col'>
+      <view class='input-text'>
+        <text>用户名：</text>
+      </view>
+          <input class='col-input' placeholder="输入用户名称" bindinput='inputName' auto-focus/>
+    </view>
+    <view class='input-col'>
+      <view class='input-text'>
+        <text>密码：</text>
+      </view>
+          <input class='col-input' placeholder="输入密码" bindinput='inputPassWord' password type="number" />
+    </view>
+  </view>
+  <view class='text-url'>
+    <view class='text-item'>
+        <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">找回密码</navigator>
+    </view>
+    <view class='text-item'>
+        <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">注册</navigator>
+    </view>
+  </view>
+  <view class='button-div'>
+    <button class='button-item' type='default' bindtap='backIndex'>首页</button>
+    <button class='button-item' type='primary' bindtap='loginIt'>登录</button>
+  </view>  
+</view>

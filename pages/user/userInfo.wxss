@@ -1,0 +1,29 @@
+/* pages/user/userInfo.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.icon-view {
+  width: 220rpx;
+  height: 220rpx;
+  margin-top: 100rpx;
+  margin-bottom: 20px
+}
+.icon-view-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%
+}
+.userInfo {
+  font-size: 35rpx;
+  color: black
+}
+.item-col {
+ color: grey
+}
+.excit {
+  width: 100%;
+  position: absolute;
+  bottom: 2rpx
+}

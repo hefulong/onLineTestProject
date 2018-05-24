@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class='container'>
+  <swiper class='container-swiper' indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='selection'>
+    <view class='selection-text'>
+      <text>精品推荐</text>
+      <navigator url="/pages/list/list?title=navigate" hover-class="navigator-hover">
+         <text class='selection-text-all'>全部精品</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class='content'>
+    <view class='content-item' wx:for='{{contentImage}}'>
+      <image src='{{item}}'></image>
+      <navigator url="/pages/wxcharts/wxcharts?title=wxcharts" hover-class="navigator-hover">
+        <text class='content-item-text'>看看是什么样子的</text>
+       </navigator>
+    </view>
+  </view>
+
+  <view class='selection'>
+    <view class='selection-text'>
+      <text>热门评测</text>
+      <text class='selection-text-all'>全部评测</text>
+    </view>
+  </view>
+
+  <view class='list-item' wx:for='{{hotImage}}'>
+    <view class='list-item-images'>
+      <image class='list-item-images-img' src='{{item.img}}'></image>
+      <image class='avatar' src='{{item.avatar}}'></image>
+    </view>
+    <view class='list-item-text'>
+      <view class='list-item-text-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='list-item-text-content'>
+        <text class='' space='true'>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+   
+
+
+
+</view>
+
+
+
+
+

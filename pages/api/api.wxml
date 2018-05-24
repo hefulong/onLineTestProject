@@ -1,0 +1,16 @@
+<!--pages/api/api.wxml-->
+<view class='container'>
+  <view class="zan-panel-title">选择图片</view>
+  <view class="zan-btns">
+    <button class="zan-btn zan-btn--primary"bindtap='changeImages'>选择图片</button>
+  </view>
+</view>
+
+<view class='img-show'>
+  <view class="zan-panel-title">图片展示</view>
+  <view>
+    <image src='{{imageUrls}}'></image>
+  </view>
+</view>
+
+

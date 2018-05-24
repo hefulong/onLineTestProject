@@ -1,0 +1,60 @@
+/* pages/login/login.wxss */
+.background-div {
+  width: 100%;
+  height: 600rpx;
+  position: absolute;
+  top: 180rpx
+}
+.background-img{
+  width: 100%;
+  height: 100%
+}
+.input-div{
+  position: absolute;
+  top: 320rpx;
+}
+.input-col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 36px
+}
+.col-input{
+  font-size: 30rpx;
+  background: white;
+  text-align: center
+}
+.input-text {
+  font-size: 30rpx;
+  color: gray;
+  font-weight:bold;
+  margin-right: 15px;
+  width: 160rpx;
+  text-align: right
+}
+.button-div{
+  position: absolute;
+  bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.button-item{
+  width: 45%;
+}
+.text-url{
+  position: absolute;
+  bottom: 550rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 120px
+}
+.text-item{
+  width: 200rpx;
+  font-size: 26rpx;
+  color: white;
+  text-align: center
+}

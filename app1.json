@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/user/userInfo",
+    "pages/api/api",
+    "pages/list/list",
+    "pages/top/top",
+    "pages/wxcharts/wxcharts"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#32CD32",
+    "backgroundColor": "#F0FFF0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "API",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png"
+      },
+      {
+        "pagePath": "pages/user/userInfo",
+        "text": "我的",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png"
+      }
+    ]
+  },
+  "subPackages" : [
+    {
+      "root":"page/api/"
+    }
+  ]
+
+}
